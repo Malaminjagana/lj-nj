@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numuyel Jaganara</title>
+    <link rel="icon" type="image/x-icon" href="daaa.jpg">
+
+    <style>
+        /* Basic Reset */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #18a9b0;
+            color: #fff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .logo span {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        /* Profile Section */
+        .profile {
+            padding: 20px;
+        }
+
+        .group {
+            margin-bottom: 40px;
+        }
+
+        .group h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            display: none; /* Hidden by default */
+        }
+
+        .profile-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-card h3 {
+            color: #333;
+        }
+
+        .profile-card p {
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #13b8bb;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .profile-card {
+                width: 90%;
+            }
+        }
+    </style>
+    <script>
+        function toggleLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en], [data-fr]');
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.textContent = el.dataset.en;
+                } else if (lang === 'fr') {
+                    el.textContent = el.dataset.fr;
+                }
+            });
+        }
+
+        function toggleGroup(groupId) {
+            const group = document.getElementById(groupId);
+            if (group.style.display === "none" || group.style.display === "") {
+                group.style.display = "flex";
+            } else {
+                group.style.display = "none";
+            }
+        }
+
+        function navigateTo(page) {
+            const sections = document.querySelectorAll("section");
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+            document.getElementById(page).style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="daaa.jpg" alt="Numuyel Jaganara Logo">
+            <span>Numuyel Jaganara</span>
+        </div>
+
+        <a href="#" onclick="navigateTo('spend')">Spend</a>
+        <a href="#" onclick="navigateTo('history')">History</a>
+        <button onclick="toggleLanguage('en')">English</button>
+        <button onclick="toggleLanguage('fr')">Français</button>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1 data-en="Welcome to Numuyel Jaganara" data-fr="Bienvenue à Numuyel Jaganara">Welcome to Numuyel Jaganara</h1>
+        <p data-en="We are a family of 20 people. Each year, every individual contributes €100 if they reside in European countries, and $100 if they are in the United States. These funds are allocated to cover household expenses in our village, such as electricity, water, and other maintenance needs."
+           data-fr="Nous sommes une famille de 20 personnes. Chaque année, chaque individu contribue 100 € s'il réside dans les pays européens, et 100 $ s'il est aux États-Unis. Ces fonds sont affectés aux dépenses ménagères de notre village, telles que l'électricité, l'eau et d'autres besoins d'entretien.">
+           We are a family of a lot of people. Each year, every individual contributes €100 if they reside in European countries, and $100 if they are in the United States. These funds are allocated to cover household expenses in our village, such as electricity, water, and other maintenance needs.
+        </p>
+    </section>
+
+    <section id="spend" class="profile" style="display: none;">
+        <h1 data-en="Spend" data-fr="Dépenses">Spend</h1>
+        <p data-en="Here is a summary of the expenses covered by the contributions." data-fr="Voici un résumé des dépenses couvertes par les contributions.">
+            Here is a summary of the expenses covered by the contributions.
+        </p>
+        <ul>
+            <li data-en="Electricity: €500" data-fr="Électricité : 500 €">Electricity: €500</li>
+            <li data-en="Water: €300" data-fr="Eau : 300 €">Water: €300</li>
+            <li data-en="Maintenance: €200" data-fr="Entretien : 200 €">Maintenance: €200</li>
+        </ul>
+    </section>
+
+    <section id="history" class="profile" style="display: none;">
+        <h1 data-en="History" data-fr="Histoire">History</h1>
+        <p data-en="Our family has been contributing for over 10 years to support our village." data-fr="Notre famille contribue depuis plus de 10 ans pour soutenir notre village.">
+            Our family has been contributing for over 10 years to support our village.
+        </p>
+        <p data-en="We are proud of our shared effort and commitment." data-fr="Nous sommes fiers de nos efforts et de notre engagement partagés.">
+            We are proud of our shared effort and commitment.
+        </p>
+    </section>
+
+    <section id="profiles" class="profile">
+        <div class="group">
+            <h2 data-en="American Group" data-fr="Groupe Américain" onclick="toggleGroup('americanGroup')">American Group</h2>
+            <div class="profile-container" id="americanGroup">
+                <div class="profile-card">
+                    <h3 data-en="mahamadumamaneh" data-fr="mahamadumamaneh">mahamadumamaneh</h3>
+                    <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+                    <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+                </div>
+                <div class="profile-card">
+                    <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+                    <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+                    <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+                </div>
+                <!-- Add more American profiles here -->
+            </div>
+        </div>
+
+        <div class="group">
+            <h2 data-en="European Group" data-fr="Groupe Européen" onclick="toggleGroup('europeanGroup')">European Group</h2>
+            <div class="profile-container" id="europeanGroup">
+                <div class="profile-card">
+                    <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+                    <p data-en="Location: Europe" data-fr="Emplacement : Europe">Location: Europe</p>
+                    <p data-en="Contribution: €100" data-fr="Contribution : 100 €">Contribution: €100</p>
+                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+                </div>
+                <div class="profile-card">
+                    <h3 data-en="Sulayman jagana" data-fr="Sulayman jagana ">Sulayman jagana</h3>
+                    <p data-en="Location: Europe" data-fr="Emplacement : Europe">Location: Europe</p>
+                    <p data-en="Contribution: €100" data-fr="Contribution : 100 €">Contribution: €100</p>
+                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 6</p>
+                </div>
+                <!-- Add more European profiles here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-en="Numuyel Jaganara - Supporting Our Village" data-fr="Numuyel Jaganara - Soutenir notre village">Numuyel Jaganara - Supporting Our Village</p>
+    </footer>
+</body>
+</html>
