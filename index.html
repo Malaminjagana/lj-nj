@@ -13,6 +13,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+        
 
         body {
             font-family: Arial, sans-serif;
@@ -164,6 +165,14 @@
             });
             document.getElementById(page).style.display = "block";
         }
+
+
+        function toggleGroup(groupId) {
+    const group = document.getElementById(groupId);
+    group.style.display = group.style.display === "none" ? "block" : "none";
+}
+
+
     </script>
 </head>
 <body>
@@ -172,7 +181,8 @@
             <img src="daaa.jpg" alt="Numuyel Jaganara Logo">
             <span>Numuyel Jaganara</span>
         </div>
-
+       
+        <a href="#" onclick="navigateTo('profiles')">Groups</a>  
         <a href="#" onclick="navigateTo('spend')">Spend</a>
         <a href="#" onclick="navigateTo('history')">History</a>
         <button onclick="toggleLanguage('en')">English</button>
@@ -209,45 +219,556 @@
         </p>
     </section>
 
-    <section id="profiles" class="profile">
-        <div class="group">
-            <h2 data-en="American Group" data-fr="Groupe Américain" onclick="toggleGroup('americanGroup')">American Group</h2>
-            <div class="profile-container" id="americanGroup">
-                <div class="profile-card">
-                    <h3 data-en="mahamadumamaneh" data-fr="mahamadumamaneh">mahamadumamaneh</h3>
-                    <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
-                    <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
-                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
-                </div>
-                <div class="profile-card">
-                    <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
-                    <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
-                    <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
-                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
-                </div>
-                <!-- Add more American profiles here -->
-            </div>
+    <!--her is the gambia groups-->
+    <!-- Gambian Group -->
+<div class="group">
+    <h2 data-en="Gambian Group" data-fr="Groupe Gambien" onclick="toggleGroup('gambianGroup')">
+        <img src="gambia.jpg" alt="Gambian Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        Gambian Group
+    </h2>
+    <div class="profile-container" id="gambianGroup">
+        <div class="profile-card">
+            <h3 data-en="Tamba jagana" data-fr="Tamba jagana">Tamba Jagana✅</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution:2024 D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
         </div>
+        <!-- Add more Gambian profiles here -->
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
+            <p data-en="Location: Gambia" data-fr="Emplacement : Gambie">Location: Gambia</p>
+            <p data-en="Contribution: D1000" data-fr="Contribution : 1000 D">Contribution: D1000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+    </div>
+</div>
+<!--american -->
+<div class="group">
+    <h2 data-en="American Group" data-fr="Groupe Américain" onclick="toggleGroup('americanGroup')">
+        <img src="america.jps.jpeg" alt="American Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        American Group
+    </h2>
+    <div class="profile-container" id="americanGroup">
+        <div class="profile-card">
+            <h3 data-en="mahamadumamaneh" data-fr="mahamadumamaneh">mahamadumamaneh</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <!-- Add more American profiles here -->
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Banuma jagana" data-fr="JBanuma jagana">Banuma jagana</h3>
+            <p data-en="Location: United States" data-fr="Emplacement : États-Unis">Location: United States</p>
+            <p data-en="Contribution: $100" data-fr="Contribution : 100 $">Contribution: $100</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+    </div>
+</div>
 
-        <div class="group">
-            <h2 data-en="European Group" data-fr="Groupe Européen" onclick="toggleGroup('europeanGroup')">European Group</h2>
-            <div class="profile-container" id="europeanGroup">
-                <div class="profile-card">
-                    <h3 data-en="Muhamadlagineh jagana" data-fr="Muhamadlagineh jagana">Muhamadlagineh jagana</h3>
-                    <p data-en="Location: Europe" data-fr="Emplacement : Europe">Location: Europe</p>
-                    <p data-en="Contribution: €100" data-fr="Contribution : 100 €">Contribution: €100</p>
-                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
-                </div>
-                <div class="profile-card">
-                    <h3 data-en="Sulayman jagana" data-fr="Sulayman jagana ">Sulayman jagana</h3>
-                    <p data-en="Location: Europe" data-fr="Emplacement : Europe">Location: Europe</p>
-                    <p data-en="Contribution: €100" data-fr="Contribution : 100 €">Contribution: €100</p>
-                    <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 6</p>
-                </div>
-                <!-- Add more European profiles here -->
-            </div>
+
+<!-- Spanish Group -->
+<div class="group">
+    <h2 data-en="Spanish Group" data-fr="Groupe Espagnol" onclick="toggleGroup('spanishGroup')">
+        <img src="epain.jpg" alt="Spanish Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        Spanish Group
+    </h2>
+    <div class="profile-container" id="spanishGroup">
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
         </div>
+        <!-- Add more Spanish profiles here -->
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+    </div>
+</div>
+
+<!-- French Group -->
+<div class="group">
+    <h2 data-en="French Group" data-fr="Groupe Français" onclick="toggleGroup('frenchGroup')">
+        <img src="france.jpg" alt="French Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        French Group
+    </h2>
+    <div class="profile-container" id="frenchGroup">
+        <div class="profile-card">
+            <h3 data-en="Jean Dupont" data-fr="Jean Dupont">Jean Dupont</h3>
+            <p data-en="Location: France" data-fr="Emplacement : France">Location: France</p>
+            <p data-en="Contribution: €180" data-fr="Contribution : 180 €">Contribution: €180</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div><div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Juan Pérez" data-fr="Juan Pérez">Juan Pérez</h3>
+            <p data-en="Location: Spain" data-fr="Emplacement : Espagne">Location: Spain</p>
+            <p data-en="Contribution: €150" data-fr="Contribution : 150 €">Contribution: €150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <!-- Add more French profiles here -->
+    </div>
+</div>
+
+<!-- German Group -->
+<div class="group">
+    <h2 data-en="German Group" data-fr="Groupe Allemand" onclick="toggleGroup('germanGroup')">
+        <img src="germany.jpg" alt="German Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        German Group
+    </h2>
+    <div class="profile-container" id="germanGroup">
+        <div class="profile-card">
+            <h3 data-en="Hans Müller" data-fr="Hans Müller">Hans Müller</h3>
+            <p data-en="Location: Germany" data-fr="Emplacement : Allemagne">Location: Germany</p>
+            <p data-en="Contribution: €200" data-fr="Contribution : 200 €">Contribution: €200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 6</p>
+        </div>
+        <!-- Add more German profiles here -->
+        <div class="profile-card">
+            <h3 data-en="Hans Müller" data-fr="Hans Müller">Hans Müller</h3>
+            <p data-en="Location: Germany" data-fr="Emplacement : Allemagne">Location: Germany</p>
+            <p data-en="Contribution: €200" data-fr="Contribution : 200 €">Contribution: €200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 6</p>
+        </div>
+    </div>
+</div>
+
+<!-- English Group -->
+<div class="group">
+    <h2 data-en="English Group" data-fr="Groupe Anglais" onclick="toggleGroup('englishGroup')">
+        <img src="england.jpg" alt="English Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        English Group
+    </h2>
+    <div class="profile-container" id="englishGroup">
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <!-- Add more English profiles here -->
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="John Smith" data-fr="John Smith">John Smith</h3>
+            <p data-en="Location: England" data-fr="Emplacement : Angleterre">Location: England</p>
+            <p data-en="Contribution: £150" data-fr="Contribution : 150 £">Contribution: £150</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 5</p>
+        </div>
+    </div>
+</div>
+
+<!-- Canadian Group -->
+<div class="group">
+    <h2 data-en="Canadian Group" data-fr="Groupe Canadien" onclick="toggleGroup('canadianGroup')">
+        <img src="canada.jpg" alt="Canadian Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        Canadian Group
+    </h2>
+    <div class="profile-container" id="canadianGroup">
+        <div class="profile-card">
+            <h3 data-en="Marie Tremblay" data-fr="Marie Tremblay">Marie Tremblay</h3>
+            <p data-en="Location: Canada" data-fr="Emplacement : Canada">Location: Canada</p>
+            <p data-en="Contribution: C$200" data-fr="Contribution : 200 $C">Contribution: C$200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <!-- Add more Canadian profiles here -->
+        <div class="profile-card">
+            <h3 data-en="Marie Tremblay" data-fr="Marie Tremblay">Marie Tremblay</h3>
+            <p data-en="Location: Canada" data-fr="Emplacement : Canada">Location: Canada</p>
+            <p data-en="Contribution: C$200" data-fr="Contribution : 200 $C">Contribution: C$200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Marie Tremblay" data-fr="Marie Tremblay">Marie Tremblay</h3>
+            <p data-en="Location: Canada" data-fr="Emplacement : Canada">Location: Canada</p>
+            <p data-en="Contribution: C$200" data-fr="Contribution : 200 $C">Contribution: C$200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <div class="profile-card">
+            <h3 data-en="Marie Tremblay" data-fr="Marie Tremblay">Marie Tremblay</h3>
+            <p data-en="Location: Canada" data-fr="Emplacement : Canada">Location: Canada</p>
+            <p data-en="Contribution: C$200" data-fr="Contribution : 200 $C">Contribution: C$200</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+    </div>
+</div>
+
+<!-- Togolese Group -->
+<div class="group">
+    <h2 data-en="Togolese Group" data-fr="Groupe Togolais" onclick="toggleGroup('togoleseGroup')">
+        <img src="togo.jpg" alt="Togolese Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        Togolese Group
+    </h2>
+    <div class="profile-container" id="togoleseGroup">
+        <div class="profile-card">
+            <h3 data-en="Koffi Mensah" data-fr="Koffi Mensah">Koffi Mensah</h3>
+            <p data-en="Location: Togo" data-fr="Emplacement : Togo">Location: Togo</p>
+            <p data-en="Contribution: CFA15000" data-fr="Contribution : 15000 CFA">Contribution: CFA15000</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 3</p>
+        </div>
+        <!-- Add more Togolese profiles here -->
+    </div>
+</div>
+
+<!-- Liberian Group -->
+<div class="group">
+    <h2 data-en="Liberian Group" data-fr="Groupe Libérien" onclick="toggleGroup('liberianGroup')">
+        <img src="liberia.jpg" alt="Liberian Flag" style="width: 30px; height: 20px; vertical-align: middle; margin-right: 10px;">
+        Liberian Group
+    </h2>
+    <div class="profile-container" id="liberianGroup">
+        <div class="profile-card">
+            <h3 data-en="Samuel Doe" data-fr="Samuel Doe">Samuel Doe</h3>
+            <p data-en="Location: Liberia" data-fr="Emplacement : Libéria">Location: Liberia</p>
+            <p data-en="Contribution: L$500" data-fr="Contribution : 500 $L">Contribution: L$500</p>
+            <p data-en="Years Contributing: 2024" data-fr="Années de contribution : 2024">Years Contributing: 4</p>
+        </div>
+        <!-- Add more Liberian profiles here -->
+    </div>
+</div>
+
+
+   
+
+   
+   
+    
+       
     </section>
+    
+
+
+
+
+
+
+    
+        
+       
+    
+
+            
+    
+       
+    
+
+
+
+
+
+
+
 
     <footer>
         <p data-en="Numuyel Jaganara - Supporting Our Village" data-fr="Numuyel Jaganara - Soutenir notre village">Numuyel Jaganara - Supporting Our Village</p>
